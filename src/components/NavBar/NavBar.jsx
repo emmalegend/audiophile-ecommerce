@@ -1,7 +1,7 @@
 import React from "react";
-import classes from "./styles.module.css";
-import { ReactComponent as IconCart } from "../../assets/svg/icon-cart.svg";
-import { ReactComponent as Logo } from "../../assets/svg/logo.svg";
+import classes from "./Nav.module.css";
+import { ReactComponent as IconCart } from "../../assets/shared/desktop/icon-cart.svg";
+import { ReactComponent as Logo } from "../../assets/shared/desktop/logo.svg";
 
 const NavBar = () => {
   return (
@@ -27,7 +27,7 @@ const NavBar = () => {
       </div>
       <div>
         <button className={classes.cart_button}>
-            <IconCart />
+          <IconCart />
         </button>
       </div>
     </nav>

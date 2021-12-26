@@ -1,5 +1,75 @@
-.header{
-    height: 73rem;
-    width: 100%;
-    background-color:#191919;
+.header {
+  height: 73rem;
+  width: 100%;
+  background-color: #191919;
+  background-image: url("../../assets/home/desktop/image-hero.jpg");
 }
+
+.nav_content {
+  width: 40%;
+  margin-top: 15rem;
+}
+
+.nav_content h5 {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 2rem;
+}
+
+.nav_content h2 {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5.6rem;
+  line-height: 5.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+
+.nav_content p {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  margin-bottom: 4rem;
+}
+
+.nav_content button {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+}
+
+.speaker_container {
+  height: 28.5rem;
+  margin: 15rem auto 5rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+

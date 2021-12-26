@@ -30,8 +30,8 @@
   color: var(--primary);
 }
 
-.cart_button{
-    background: transparent;
-    border: none;
-    cursor: pointer;
+.cart_button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }

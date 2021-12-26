@@ -1,0 +1,72 @@
+.container {
+  width: 100%;
+  height: 56rem;
+  background-color: var(--primary);
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  display: flex;
+}
+.container::after {
+  content: url("../../assets/home/desktop/pattern-circles.svg");
+  position: absolute;
+  top: -2rem;
+  left: -8rem;
+}
+
+.container_image {
+  align-self: flex-end;
+  width: 55%;
+  margin-bottom: -2rem;
+  padding-left: 20rem;
+}
+.container_text{
+    /* grid-row: 2/5;
+    grid-column: 6/7;
+    align-self: center; */
+    width: 45%;
+    align-self: center;
+}
+.container img {
+  width: 35rem;
+}
+
+.container_text h2 {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5.6rem;
+  line-height: 5.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 5rem;
+  margin-bottom: 2rem;
+}
+.container_text p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  width: 35rem;
+  margin-bottom: 3rem;
+}
+.container_text button {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: black;
+  border: none;
+  outline: none;
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+}

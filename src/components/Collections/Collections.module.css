@@ -1,10 +1,3 @@
-/* .collections_wrapper{
-  height: 28.5rem;
-  width: 100%;
-  margin: 15rem 0 5rem;
-  display: flex;
-  justify-content: space-between;
-} */
 .collections_text {
   height:65%;
   width: 32%;
@@ -70,5 +63,21 @@
   top: -4rem;
   left: 15%;
   width: 70%;
+}
+}
+@media screen and (max-width: 480px) {
+   .collections_text{
+    width:90%;
+    margin: 10% auto;
+    height: 90%;
+  }
+  .collections_text img {
+  position: absolute;
+  top: -4rem;
+  left: 25%;
+  width: 50%;
+}
+.collections_text_div h3 {
+  margin-bottom: 3%;
 }
 }

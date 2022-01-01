@@ -20,6 +20,11 @@ html {
     font-size: 50%;
   }
 } 
+@media screen and (max-width: 480px) {
+  html{
+    font-size: 60%;
+  }
+}
 body {
   margin: 0;
   font-family: "Manrope", "Roboto", sans-serif;

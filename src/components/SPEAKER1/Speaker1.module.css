@@ -2,30 +2,25 @@
   width: 100%;
   height: 56rem;
   background-color: var(--primary);
-  position: relative;
   overflow: hidden;
   border-radius: 0.8rem;
   display: flex;
-}
-.container::after {
-  content: url("../../assets/home/desktop/pattern-circles.svg");
-  position: absolute;
-  top: -2rem;
-  left: -8rem;
+  align-content: flex-start;
+  justify-content: space-around;
+  margin-bottom: 4rem;
+  padding: 15% 2% 0 13%;
+  background-image: url("../../assets/home/desktop/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 17rem top -5rem;
 }
 
+
 .container_image {
-  align-self: flex-end;
-  width: 55%;
-  margin-bottom: -2rem;
-  padding-left: 20rem;
+  width: 50%;
 }
-.container_text{
-    /* grid-row: 2/5;
-    grid-column: 6/7;
-    align-self: center; */
-    width: 45%;
-    align-self: center;
+.container_text {
+  width: 35%;
 }
 .container img {
   width: 35rem;
@@ -41,7 +36,7 @@
   text-transform: uppercase;
   color: #ffffff;
   width: 5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .container_text p {
   font-family: Manrope;
@@ -53,7 +48,7 @@
   mix-blend-mode: normal;
   opacity: 0.75;
   width: 35rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 .container_text button {
   font-family: Manrope;
@@ -69,4 +64,149 @@
   outline: none;
   padding: 1.5rem 2.5rem;
   cursor: pointer;
+}
+.container_text button:hover {
+  background-color: #4c4c4c;
+}
+
+.container_second {
+  background-image: url("../../assets/home/desktop/image-speaker-zx7.jpg");
+  width: 100%;
+  height: 32rem;
+  background-size: cover;
+  margin-bottom: 4rem;
+}
+.container_second_text {
+  width: 60%;
+  padding: 10rem;
+}
+.container_second_text h2 {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 5rem;
+}
+.container_second_text button {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: black;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.container_third {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 32rem;
+  margin-bottom: 15rem;
+}
+
+.container_third_image {
+  background-image: url("../../assets/home/desktop/image-earphones-yx1.jpg");
+  width: 47%;
+  background-size: cover;
+  border-radius: 8px;
+}
+.container_third_text {
+  width: 47%;
+  padding: 10rem;
+  background-color: var(--ash);
+  border-radius: 8px;
+}
+
+.container_third_text h2 {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 5rem;
+}
+
+.container_third_text button {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: black;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.container_second_text button:hover,
+.container_third_text button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    height: 75rem;
+    flex-direction: column;
+    background-position: center top -20rem;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .container_image {
+  width:100%;
+  text-align: center;
+}
+.container_image img{
+  width: 25%;
+}
+.container_text {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container_text h2{
+  width: 30rem;
+  text-align: center;
+}
+.container_text p{
+  width: 32rem;
+  text-align: center;
+}
+.container_second {
+  background-image: url("../../assets/home/tablet/image-speaker-zx7.jpg");
+}
+.container_second_text {
+  padding: 8rem;
+}
+.container_third_image {
+  background-image: url("../../assets/home/tablet/image-earphones-yx1.jpg");
+}
+.container_third_text {
+  width: 47%;
+  padding: 8rem 4rem;
+  background-color: var(--ash);
+  border-radius: 8px;
+}
 }

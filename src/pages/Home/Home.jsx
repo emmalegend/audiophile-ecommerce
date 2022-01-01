@@ -1,13 +1,15 @@
 import React from "react";
+import BestGear from "../../components/BestGear/BestGear";
 import Header from "../../components/Header/Header";
 import Speaker1 from "../../components/SPEAKER1/Speaker1";
-//import classes from "./Home.module.css";
+import classes from "./Home.module.css";
 const Home = () => {
   return (
-    <main>
+    <main className={classes.main}>
       <Header />
-      <section>
+      <section className={classes.container}>
         <Speaker1 />
+        <BestGear />
       </section>
     </main>
   );

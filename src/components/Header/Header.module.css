@@ -3,6 +3,7 @@
   width: 100%;
   background-color: #191919;
   background-image: url("../../assets/home/desktop/image-hero.jpg");
+  padding: 0 16.5rem;
 }
 
 .nav_content {
@@ -63,13 +64,50 @@
   padding: 1.5rem 2.5rem;
   cursor: pointer;
 }
-
+.nav_content button:hover {
+  background-color: var(--primary-light);
+}
 .speaker_container {
   height: 28.5rem;
-  margin: 15rem auto 5rem;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+  width: 100%;
+  margin: 15rem 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16.5rem;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .header{
+    background-image: url('../../assets/home/tablet/image-header.jpg');
+    background-position: center;
+    background-size: contain;
+    padding:0 5rem;
+    height: 75rem;
+    width: auto;
+  }
+  .nav_content{
+    text-align: center;
+    width: 60%;
+    margin: 15rem auto 0;
+  }
+  .nav_content h5{
+    font-size: 2rem;
+  }
+  .nav_content h2{
+    font-size: 4.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+  }
+  .nav_content p{
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  .nav_content button{
+      padding: 2rem 4rem;
+      font-size: 1.8rem;
+  }
+  .speaker_container {
+    padding: 0 5rem;
+    margin: 10rem 0 0;
+  }
+}

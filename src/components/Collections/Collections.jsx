@@ -4,16 +4,16 @@ import { ReactComponent as ArrowRight } from "../../assets/shared/desktop/icon-a
 
 const Collections = ({src, type}) => {
     return (
-      <div className={styles.collections_text}>
-        <img src={src} alt="" />
-        <div className={styles.collections_text_div}>
-          <h3>{type}</h3>
-          <button className={styles.collections_text_button}>
-            <span>Shop</span>
-            <ArrowRight />
-          </button>
+        <div className={styles.collections_text}>
+          <img src={src} alt={type} />
+          <div className={styles.collections_text_div}>
+            <h3>{type}</h3>
+            <button className={styles.collections_text_button}>
+              <a href="l.com">Shop</a>
+              <ArrowRight />
+            </button>
+          </div>
         </div>
-      </div>
     );
 }
 

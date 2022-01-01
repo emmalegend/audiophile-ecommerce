@@ -1,5 +1,9 @@
-.hero {
-  height: 73rem;
-  width: 100%;
-  background-image: url("../../assets/home/desktop/image-hero.jpg");
+.container{
+    padding: 0 16.5rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container{
+        padding: 0 5rem;
+    }
 }

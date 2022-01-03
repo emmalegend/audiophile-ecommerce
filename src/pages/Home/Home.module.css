@@ -1,14 +1,14 @@
-.container{
-    padding: 0 16.5rem;
+.container {
+  padding: var(--padding-desktop);
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .container{
-        padding: 0 5rem;
-    }
+  .container {
+    padding: var(--padding-tablet);
+  }
 }
-@media screen and (max-width: 480px){
-    .container{
-        padding: 0 2rem;
-    }
+@media screen and (max-width: 480px) {
+  .container {
+    padding: var(--padding-mobile);
+  }
 }

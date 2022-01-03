@@ -1,0 +1,142 @@
+.container {
+  width: 100%;
+  height: 36.5rem;
+  background-color: #101010;
+  color: white;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 60px 50px 120px 75px;
+  grid-template-areas:
+    "hr ."
+    "logo links"
+    "text icons"
+    "copyright .";
+  padding: 0 16.5rem;
+}
+.hr {
+  grid-area: hr;
+  height: 30px;
+}
+.hr hr {
+  background-color: #d87d4a;
+  width: 20%;
+  height: 5px;
+  border: none;
+}
+.nav_links {
+  grid-area: links;
+}
+.nav_links ul {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_links ul a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.nav_links ul li {
+  list-style: none;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.nav_links ul a:hover {
+  color: #d87d4a;
+}
+.logo {
+  grid-area: logo;
+}
+.text {
+  grid-area: text;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  width: 85%;
+  align-self: flex-end;
+}
+.icons {
+  grid-area: icons;
+  align-self: flex-end;
+  justify-self: flex-end;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.icon:hover path {
+  fill: #d87d4a;
+}
+.copyright {
+  grid-area: copyright;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  align-self: flex-end;
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .container {
+    height: 40rem;
+    grid-template-rows: 50px 50px 30px 70px 70px;
+    grid-template-areas:
+      "hr ."
+      "logo ."
+      "links ."
+      "text text"
+      "copyright icons";
+    padding: var(--padding-tablet);
+  }
+  .nav_links ul li {
+    font-size: 1.4rem;
+  }
+  .text {
+    width: 100%;
+  }
+  .icons {
+    width: 45%;
+  }
+  .copyright {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    height: 55rem;
+    grid-template-columns: 100%;
+    grid-template-rows: 20px 30px 140px 120px 70px 50px;
+    grid-template-areas:
+      "hr"
+      "logo"
+      "links"
+      "text"
+      "copyright"
+      "icons";
+    padding: var(--padding-mobile);
+    margin-top: 35%;
+  }
+  .nav_links ul {
+    flex-direction: column;
+  }
+  .icons {
+    justify-self: center;
+    width: 40%;
+  }
+  .hr .logo {
+    justify-self: center;
+  }
+}

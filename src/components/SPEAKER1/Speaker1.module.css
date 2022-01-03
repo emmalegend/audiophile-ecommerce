@@ -163,7 +163,7 @@
   color: #ffffff;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 1150px) {
   .container {
     height: 75rem;
     flex-direction: column;

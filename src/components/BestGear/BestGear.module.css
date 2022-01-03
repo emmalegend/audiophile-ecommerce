@@ -41,7 +41,7 @@
   border-radius: 8px;
   background-size: cover;
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 1150px) {
 .container{
   flex-direction: column-reverse;
   height: 65rem;
@@ -81,6 +81,7 @@
   margin-bottom: 2rem;
 }
 .container_text p{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  overflow-y:scroll;
 }
 }

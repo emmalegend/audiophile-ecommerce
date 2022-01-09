@@ -59,9 +59,8 @@
   margin: 15rem 0 5rem;
   display: flex;
   justify-content: space-between;
-  padding: 0 16.5rem;
 }
-@media screen and (min-width: 481px) and (max-width: 1150px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .collections_text_div {
     height: 50%;
   }
@@ -72,15 +71,30 @@
     width: 70%;
   }
   .speaker_container {
-    padding: 0 5rem;
     margin: 10rem 0 0;
   }
 }
+
+@media screen and (min-width: 761px) and (max-width: 1150px) {
+  .collections_text_div {
+    height: 50%;
+  }
+  .collections_text img {
+    position: absolute;
+    top: -4rem;
+    left: 15%;
+    width: 60%;
+  }
+  .speaker_container {
+    margin: 10rem 0 0;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .collections_text {
     width: 90%;
     margin: 10% auto;
-    height: 90%;
+    height: 70%;
   }
   .collections_text img {
     position: absolute;
@@ -94,7 +108,7 @@
   .speaker_container {
     flex-direction: column;
     justify-content: space-between;
-    height: 90rem;
+    height: 80rem;
     padding: 0;
     margin: 0;
   }

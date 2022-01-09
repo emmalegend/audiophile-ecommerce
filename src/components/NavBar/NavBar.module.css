@@ -40,13 +40,29 @@
   border: none;
   cursor: pointer;
 }
+.nav_hr {
+  padding: var(--padding-desktop);
+}
+.nav_hr hr {
+  height: 1px;
+  border: none;
+  background-color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.2;
+}
 @media screen and (min-width: 481px) and (max-width: 1150px) {
   .nav {
+    padding: var(--padding-tablet);
+  }
+  .nav_hr {
     padding: var(--padding-tablet);
   }
 }
 @media screen and (max-width: 480px) {
   .nav {
+    padding: var(--padding-mobile);
+  }
+  .nav_hr {
     padding: var(--padding-mobile);
   }
 }
@@ -62,5 +78,10 @@
     display: flex;
     width: 100rem;
     align-items: center;
+  }
+}
+@media screen and (max-width: 481px) {
+  .logo_container .logo {
+    margin-left: 17%;
   }
 }

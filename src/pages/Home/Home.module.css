@@ -1,29 +1,14 @@
 .container {
   padding: var(--padding-desktop);
 }
-.hr {
-  padding: var(--padding-desktop);
-}
-hr {
-  height: 1px;
-  border: none;
-  background-color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.2;
-}
+
 @media screen and (min-width: 481px) and (max-width: 1150px) {
   .container {
     padding: var(--padding-tablet);
   }
-  .hr {
-  padding: var(--padding-tablet);
-}
 }
 @media screen and (max-width: 480px) {
   .container {
     padding: var(--padding-mobile);
   }
-  .hr {
-  padding: var(--padding-mobile);
-}
 }

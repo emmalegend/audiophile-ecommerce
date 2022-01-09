@@ -14,12 +14,12 @@
   padding: 0 16.5rem;
   margin-top: 10%;
 }
-.hr {
+.footer_hr {
   grid-area: hr;
   height: 30px;
 }
-.hr hr {
-  background-color: #d87d4a;
+.footer_hr hr {
+  background-color: var(--primary);
   width: 20%;
   height: 5px;
   border: none;
@@ -154,7 +154,7 @@
     order: 1;
     margin: 0 auto;
   }
-  .hr hr{
+  .footer_hr hr{
     margin: 0 auto;
   }
   .copyright{

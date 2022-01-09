@@ -1,5 +1,4 @@
 import React from "react";
-import Collections from "../Collections/Collections";
 import styles from "./Header.module.css";
 
 const Header = () => {
@@ -16,7 +15,6 @@ const Header = () => {
           <button>see product</button>
         </div>
       </header>
-      <Collections />
     </>
   );
 };

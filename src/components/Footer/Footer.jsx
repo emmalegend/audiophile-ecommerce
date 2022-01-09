@@ -8,7 +8,7 @@ import { ReactComponent as Logo } from "../../assets/shared/desktop/logo.svg";
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.hr}>
+      <div className={styles.footer_hr}>
         <hr />
       </div>
       <div className={styles.logo}>

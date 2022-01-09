@@ -1,0 +1,33 @@
+.button_container button {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+}
+
+.button_container button:hover {
+  background-color: var(--primary-light);
+}
+
+@media screen and (min-width: 481px) and (max-width: 1150px) {
+  .button_container button {
+    padding: 2rem 4rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button_container button {
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+  }
+}

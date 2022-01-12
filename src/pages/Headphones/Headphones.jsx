@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./Headphones.module.css";
-import headphones1 from "../../assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg"
 import Button from "../../components/Button/Button";
+import Collections from "../../components/Collections/Collections";
+import BestGear from "../../components/BestGear/BestGear";
 
 const Headphones = () => {
   return (
@@ -27,15 +28,18 @@ const Headphones = () => {
           <Button label="see product" />
         </div>
       </div>
-     <div className={styles.item_container2}>
+      <div className={styles.item_container2}>
         <div className={styles.item_container_text2}>
           <p>New product</p>
           <h2>
-            xx99 markI<br />
+            xx99 markI
+            <br />
             Headphones
           </h2>
           <h4>
-            As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.
+            As the gold standard for headphones, the classic XX99 Mark I offers
+            detailed and accurate audio reproduction for audiophiles, mixing
+            engineers, and music aficionados alike in studios and on the go.
           </h4>
           <Button label="see product" />
         </div>
@@ -60,6 +64,10 @@ const Headphones = () => {
           </h4>
           <Button label="see product" />
         </div>
+      </div>
+      <div className={styles.addedSection}>
+        <Collections />
+        <BestGear />
       </div>
     </main>
   );

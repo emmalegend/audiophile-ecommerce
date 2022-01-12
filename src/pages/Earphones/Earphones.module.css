@@ -1,0 +1,153 @@
+.item_header {
+  background-color: #191919;
+  padding: 10rem 0;
+  margin-top: -1rem;
+}
+.item_header h2 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 4.4rem;
+  text-align: center;
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.item_container {
+  display: flex;
+  height: 46rem;
+  width: 100%;
+  padding: var(--padding-desktop);
+  margin: 7rem 0;
+}
+
+.item_container_image {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item_container_img {
+  background-image: url("../../assets/product-yx1-earphones/desktop/image-category-page-preview.jpg");
+  height: 38.6rem;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item_container_text {
+  width: 50%;
+  padding-left: 10rem;
+}
+
+.item_container_text p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  color: #d87d4a;
+  margin-top: 7rem;
+}
+.item_container_text h2 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.8rem;
+  line-height: 4.4rem;
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 2rem;
+}
+.item_container_text h4 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin: 4rem 0;
+}
+
+.addedSection {
+  margin-top: 20rem;
+  padding: var(--padding-desktop);
+}
+
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  .item_container {
+    flex-direction: column;
+    height: 70rem;
+    padding: var(--padding-tablet);
+  }
+ 
+  .item_container_image {
+    width: 100%;
+  }
+  .item_container_img {
+   background-image: url("../../assets/product-yx1-earphones/tablet/image-category-page-preview.jpg");
+    height: 38.6rem;
+    width: 100%;
+  }
+  .item_container_text {
+    width: 100%;
+    padding: 0 3rem;
+    text-align: center;
+  }
+  .item_container_text p {
+    margin-top: 5rem;
+  }
+
+  .addedSection {
+    padding: var(--padding-tablet);
+    margin-top: 22rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .item_container {
+    flex-direction: column;
+    height: 75rem;
+    padding: var(--padding-mobile);
+  }
+  
+  .item_container_image {
+    width: 100%;
+    height: 70rem;
+  }
+  .item_container_img {
+  background-image: url("../../assets/product-yx1-earphones/mobile/image-category-page-preview.jpg");
+    height: 38.6rem;
+    width: 100%;
+  }
+    
+  .item_container_text {
+    width: 100%;
+    padding: 0 3rem;
+    text-align: center;
+  }
+  .item_container_text p {
+    margin-top: 4rem;
+  }
+  .item_container_text h2 {
+    font-size: 3.2rem;
+  }
+  .item_container_text h4 {
+    font-size: 1.2rem;
+    margin: 3rem 0;
+  }
+ 
+  .addedSection {
+    padding: var(--padding-mobile);
+    margin-top: 10rem;
+  }
+}
+

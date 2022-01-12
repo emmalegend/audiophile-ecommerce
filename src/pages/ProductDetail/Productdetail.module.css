@@ -14,13 +14,76 @@
   align-items: center;
   justify-content: center;
 }
-.item_container_img {
+/* .item_container_img {
   background-image: url("../../assets/product-yx1-earphones/desktop/image-category-page-preview.jpg");
   height: 38.6rem;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+} */
+.productdetail_input {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  width: 70px;
+  padding: 1.5rem 2.5rem;
+  justify-content: space-between;
+  width: 12rem;
+  margin-right: 1rem;
+}
+.productdetail_input button {
+  outline: none;
+  border: none;
+  background-color: #f1f1f1;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  cursor: pointer;
+}
+.product_amount {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.productdetail_input button:hover {
+  color: #d87d4a;
+  opacity: 1;
+}
+.productdetail_qty {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.product_atk {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.item_containerImg {
+  height: 43rem;
+  width: 42rem;
 }
 
 .item_container_text {
@@ -37,7 +100,7 @@
   letter-spacing: 1rem;
   text-transform: uppercase;
   color: #d87d4a;
-  margin-top: 7rem;
+  margin-top: 4rem;
 }
 .item_container_text h2 {
   font-family: Manrope;
@@ -59,5 +122,5 @@
   color: #000000;
   mix-blend-mode: normal;
   opacity: 0.5;
-  margin: 4rem 0;
+  margin: 3rem 0;
 }

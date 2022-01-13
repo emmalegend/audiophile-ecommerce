@@ -20,14 +20,14 @@
 
 @media screen and (min-width: 481px) and (max-width: 1150px) {
   .button_container button {
-    padding: 2rem 4rem;
-    font-size: 1.8rem;
+    padding: 1.8rem 3.5rem;
+    font-size: 1.4rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .button_container button {
-    padding: 1.5rem 3rem;
-    font-size: 1.5rem;
+    padding: 1.2rem 3rem;
+    font-size: 1.4rem;
   }
 }

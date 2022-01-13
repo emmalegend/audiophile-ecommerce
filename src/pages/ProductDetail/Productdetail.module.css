@@ -14,6 +14,22 @@
   align-items: center;
   justify-content: center;
 }
+.goBack p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  padding: var(--padding-desktop);
+  cursor: pointer;
+}
+.goBack p:hover {
+  color: #d87d4a;
+  opacity: 1;
+}
 /* .item_container_img {
   background-image: url("../../assets/product-yx1-earphones/desktop/image-category-page-preview.jpg");
   height: 38.6rem;
@@ -82,8 +98,8 @@
 }
 
 .item_containerImg {
-  height: 43rem;
-  width: 42rem;
+  height: auto;
+  width: 100%;
 }
 
 .item_container_text {
@@ -123,4 +139,197 @@
   mix-blend-mode: normal;
   opacity: 0.5;
   margin: 3rem 0;
+}
+.productdetail_detail {
+  display: flex;
+  justify-content: space-between;
+  height: 50rem;
+  padding: var(--padding-desktop);
+}
+.productdetail_detail1 {
+  width: 50%;
+}
+.productdetail_detail1 h2,
+.productdetail_detail2 h2 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  letter-spacing: 1.14286px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+.productdetail_detail1 p,
+.productdetail_detail2 p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.productdetail_detail2 {
+  width: 30%;
+}
+.productdetail_content {
+  display: flex;
+  align-items: center;
+}
+.productdetail_content span {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #d87d4a;
+  margin-right: 2rem;
+}
+.productdetail_gallery {
+  width: 100%;
+  height: 37rem;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 80% 80%;
+  grid-template-areas:
+    "img1 img3"
+    "img2 img3";
+  padding: var(--padding-desktop);
+  gap:2.5rem;
+}
+
+.productdetail_gallery_img1 {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  grid-area: img1;
+}
+.productdetail_gallery_img2 {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  grid-area: img2;
+}
+.productdetail_gallery_img3 {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  grid-area: img3;
+}
+@media screen and (min-width: 481px) and (max-width: 1000px) {
+  .item_container {
+    padding: var(--padding-tablet);
+    margin: 5rem 0;
+    height: 50rem;
+  }
+  .productdetail_input {
+    padding: 1.8rem 3.5rem;
+  }
+  .item_container_text {
+    padding-left: 4rem;
+  }
+  .item_container_text h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .item_container_text h4 {
+    margin: 2rem 0;
+  }
+  .item_container_text p {
+    margin-top: 5rem;
+  }
+  .goBack p {
+    padding: var(--padding-tablet);
+  }
+  .productdetail_detail {
+    flex-direction: column;
+    padding: var(--padding-tablet);
+    margin-bottom: 10rem;
+  }
+  .productdetail_detail1,
+  .productdetail_detail2 {
+    width: 100%;
+  }
+  .productdetail_detail2 {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+  .productdetail_gallery {
+      padding: var(--padding-tablet);
+  }
+}
+@media screen and (max-width: 550px) {
+    .productdetail_gallery {
+      padding: var(--padding-mobile);
+      grid-template-columns: 100%;
+  grid-template-rows: 100% 100% 100%;
+  grid-template-areas:
+    "img1"
+    "img2"
+    "img3";
+  padding: var(--padding-mobile);
+  gap:2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .item_container {
+    height: 75rem;
+    padding: var(--padding-mobile);
+    margin: 1rem 0;
+    flex-direction: column;
+    margin: 5rem 0;
+  }
+  .item_container_text p {
+    margin-top: 3rem;
+  }
+  .item_containerImg {
+    border-radius: 10px;
+    width: 100%;
+  }
+  .item_container_image {
+    width: 100%;
+    width: 100%;
+  }
+  .item_container_text {
+    width: 100%;
+    height: 50%;
+    padding: 0;
+  }
+  .item_container_text h2 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  .item_container_text h4 {
+    margin: 1rem 0;
+  }
+  .productdetail_input {
+    padding: 1.2rem 3rem;
+  }
+  .product_atk {
+    margin-top: 3rem;
+  }
+  .goBack p {
+    padding: var(--padding-mobile);
+  }
+  .productdetail_detail {
+    flex-direction: column;
+    padding: var(--padding-mobile);
+    height: 70rem;
+    margin: 10rem 0;
+  }
+  .productdetail_detail1,
+  .productdetail_detail2 {
+    width: auto;
+  }
+  .productdetail_detail2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 5rem;
+  }
 }

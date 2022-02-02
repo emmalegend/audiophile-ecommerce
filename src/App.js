@@ -6,10 +6,11 @@ import "./App.css";
 //import Speakers from "./pages/Speakers/Speakers";
 //import Headphones from "./pages/Headphones/Headphones";
 //import Home from "./pages/Home/Home";
-
+import Checkout from './pages/Checkout/Checkout'
 function App() {
   return (
     <>
+    <Checkout />
     </>
   );
 }

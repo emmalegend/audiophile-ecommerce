@@ -1,0 +1,45 @@
+.checkout_form {
+  width: 73rem;
+  height: 112rem;
+}
+.checkout_form_billing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.checkout_form_input{
+    width: 48%;
+}
+.checkout_form_input_full{
+    width: 100%;
+}
+label {
+  display: block;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.214286px;
+  color: #000000;
+}
+input[type="text"] {
+  background: #ffffff;
+  border: 1px solid #cfcfcf;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 100%;
+  outline: none;
+}
+
+.checkbox_button{
+    display: flex;
+    align-items: center;
+    width: 100%;
+     background: #ffffff;
+  border: 1px solid #cfcfcf;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
